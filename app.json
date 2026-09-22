@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Prism Blocks",
+    "slug": "prism-blocks",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#07111F",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.example.prismblocks" },
+    "android": { "package": "com.example.prismblocks", "adaptiveIcon": { "backgroundColor": "#07111F" } }
+  }
+}
