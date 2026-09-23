@@ -1,51 +1,15 @@
-# macOS
-.DS_Store
-
-# Node
 node_modules/
+.expo/
+dist/
+dist-*/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-.pytest_cache/
-.venv/
-venv/
-env/
-*.egg-info/
-
-# Environment / secrets
-.env
-.env.*
-!.env.example
-
-# Editor / IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Xcode user state and local build artifacts
-xcuserdata/
-*.xcuserstate
-DerivedData/
-*.xcappdata/
-*.xcresult/
-phase0-private/
-.build/
-*.xccheckout
-*.xcscmblueprint
-
-# Logs / temp
-*.log
-tmp/
-.tmp/
-
-# Build output
-dist/
-build/
-coverage/
+.DS_Store
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
