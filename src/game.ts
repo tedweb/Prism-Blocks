@@ -27,6 +27,28 @@ export const newTray = () => [randomPiece(), randomPiece(), randomPiece()];
 export function canPlace(board: Board, piece: Piece, row: number, col: number) {
   return piece.shape.every(([dr, dc]) => row + dr >= 0 && row + dr < SIZE && col + dc >= 0 && col + dc < SIZE && !board[row + dr]![col + dc]);
 }
+export function snapPlacement(board: Board, piece: Piece, pieceCenterX: number, pieceCenterY: number, boardX: number, boardY: number, cell: number, gap: number, snapRadius: number) {
+  const b = bounds(piece.shape);
+  const pitch = cell + gap;
+  const firstCenterX = boardX + gap + cell / 2;
+  const firstCenterY = boardY + gap + cell / 2;
+  const rawCol = (pieceCenterX - firstCenterX) / pitch - (b.w - 1) / 2;
+  const rawRow = (pieceCenterY - firstCenterY) / pitch - (b.h - 1) / 2;
+  const row = Math.round(rawRow), col = Math.round(rawCol);
+
+  if (canPlace(board, piece, row, col)) return { row, col, valid: true };
+
+  let nearest: { row: number; col: number; distance: number } | null = null;
+  for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++) {
+    const candidateRow = row + dr, candidateCol = col + dc;
+    if (!canPlace(board, piece, candidateRow, candidateCol)) continue;
+    const candidateCenterX = firstCenterX + (candidateCol + (b.w - 1) / 2) * pitch;
+    const candidateCenterY = firstCenterY + (candidateRow + (b.h - 1) / 2) * pitch;
+    const distance = Math.hypot(pieceCenterX - candidateCenterX, pieceCenterY - candidateCenterY);
+    if (distance <= snapRadius && (!nearest || distance < nearest.distance)) nearest = { row: candidateRow, col: candidateCol, distance };
+  }
+  return nearest ? { row: nearest.row, col: nearest.col, valid: true } : { row, col, valid: false };
+}
 export function placeAndClear(board: Board, piece: Piece, row: number, col: number) {
   const next = board.map(r => [...r]);
   piece.shape.forEach(([dr, dc]) => { next[row + dr]![col + dc] = piece.color; });

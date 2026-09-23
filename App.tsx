@@ -4,13 +4,15 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Haptics from 'expo-haptics';
 import { StatusBar } from 'expo-status-bar';
-import { anyMove, Board, bounds, canPlace, emptyBoard, newTray, Piece, placeAndClear, SIZE } from './src/game';
+import { anyMove, Board, bounds, canPlace, emptyBoard, newTray, Piece, placeAndClear, SIZE, snapPlacement } from './src/game';
 
 const W = Dimensions.get('window').width;
 const BOARD = Math.min(W - 32, 430);
 const GAP = 3;
 const CELL = (BOARD - GAP * (SIZE + 1)) / SIZE;
+const PITCH = CELL + GAP;
 const LIFT = 112;
+const SNAP_RADIUS = PITCH * .9;
 
 function Block({color, size=CELL}:{color:string,size?:number}) {
   return <View style={[styles.block,{width:size,height:size,backgroundColor:color,borderRadius:size*.18}]}><View style={styles.glint}/></View>;
@@ -21,12 +23,22 @@ function PieceView({piece, scale=.7}:{piece:Piece,scale?:number}) {
   return <View style={{width:b.w*s,height:b.h*s}}>{piece.shape.map(([r,c],i)=><View key={i} style={{position:'absolute',left:c*s,top:r*s,padding:1}}><Block color={piece.color} size={s-2}/></View>)}</View>;
 }
 
+function FloatingPiece({piece}:{piece:Piece}) {
+  const b=bounds(piece.shape);
+  return <View style={{width:(b.w-1)*PITCH+CELL,height:(b.h-1)*PITCH+CELL}}>{piece.shape.map(([r,c],i)=><View key={i} style={{position:'absolute',left:c*PITCH,top:r*PITCH}}><Block color={piece.color}/></View>)}</View>;
+}
+
+function getPlacement(board:Board,piece:Piece,x:number,y:number,boardX:number,boardY:number) {
+  return snapPlacement(board,piece,x,y-LIFT,boardX,boardY,CELL,GAP,SNAP_RADIUS);
+}
+
 function App() {
   const [board,setBoard]=useState<Board>(emptyBoard);
   const [tray,setTray]=useState<(Piece|null)[]>(newTray);
   const [score,setScore]=useState(0), [best,setBest]=useState(0), [combo,setCombo]=useState(0);
   const [over,setOver]=useState(false), [tutorial,setTutorial]=useState(false), [muted,setMuted]=useState(false);
   const [preview,setPreview]=useState<{piece:Piece,row:number,col:number,valid:boolean,x:number,y:number}|null>(null);
+  const previewRef=useRef<{piece:Piece,row:number,col:number,valid:boolean,x:number,y:number}|null>(null);
   const boardRef=useRef<View>(null), boardXY=useRef({x:0,y:0});
   const pulse=useRef(new Animated.Value(1)).current;
 
@@ -34,6 +46,7 @@ function App() {
   useEffect(()=>{if(score>best){setBest(score);AsyncStorage.setItem('pb-best',String(score));}},[score,best]);
   useEffect(()=>{if(!anyMove(board,tray)) setOver(true);},[board,tray]);
   const measure=()=>boardRef.current?.measureInWindow((x,y)=>boardXY.current={x,y});
+  const clearPreview=()=>{previewRef.current=null;setPreview(null);};
 
   function commit(piece:Piece,index:number,row:number,col:number){
     if(!canPlace(board,piece,row,col)){ if(!muted) Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error); return; }
@@ -44,7 +57,7 @@ function App() {
     if(result.lines){Animated.sequence([Animated.timing(pulse,{toValue:1.13,duration:120,useNativeDriver:true}),Animated.spring(pulse,{toValue:1,useNativeDriver:true})]).start();}
     setTray(next.every(v=>!v)?newTray():next);
   }
-  function reset(){setBoard(emptyBoard());setTray(newTray());setScore(0);setCombo(0);setOver(false);setPreview(null);}
+  function reset(){setBoard(emptyBoard());setTray(newTray());setScore(0);setCombo(0);setOver(false);clearPreview();}
 
   return <SafeAreaView style={styles.safe}><StatusBar style="light"/><View style={styles.header}>
     <View><Text style={styles.brand}>PRISM</Text><Text style={styles.subbrand}>BLOCKS</Text></View>
@@ -52,34 +65,36 @@ function App() {
     <View style={styles.bestCard}><Text style={styles.scoreLabel}>BEST</Text><Text style={styles.best}>{best.toLocaleString()}</Text></View>
   </View>
   <View style={styles.toolbar}><Pressable onPress={reset} style={styles.iconButton}><Text style={styles.icon}>↻</Text></Pressable><View style={styles.combo}>{combo>1&&<Text style={styles.comboText}>COMBO ×{combo}</Text>}</View><Pressable onPress={()=>setMuted(v=>!v)} style={styles.iconButton}><Text style={styles.icon}>{muted?'♢':'◈'}</Text></Pressable></View>
-  <View ref={boardRef} onLayout={measure} style={styles.board}>
+  <View ref={boardRef} onLayout={()=>requestAnimationFrame(measure)} style={styles.board}>
     {board.map((row,r)=>row.map((color,c)=>{
       const ghost=preview?.valid&&preview.piece.shape.some(([dr,dc])=>preview.row+dr===r&&preview.col+dc===c);
       return <View key={`${r}-${c}`} style={[styles.cell,{left:GAP+c*(CELL+GAP),top:GAP+r*(CELL+GAP),width:CELL,height:CELL}]}>{color&&<Block color={color}/>}<>{ghost&&<View style={[styles.ghost,{backgroundColor:preview!.piece.color}]}/>}</></View>
     }))}
   </View>
   <Text style={styles.hint}>Drag a piece onto the board • Fill rows or columns</Text>
-  <View style={styles.tray}>{tray.map((piece,i)=><PieceSlot key={piece?.id||i} piece={piece} index={i} onMove={(p,x,y)=>{
-    const col=Math.round((x-boardXY.current.x-GAP-CELL/2)/(CELL+GAP));
-    const row=Math.round((y-LIFT-boardXY.current.y-GAP-CELL/2)/(CELL+GAP));
-    setPreview({piece:p,row,col,valid:canPlace(board,p,row,col),x,y});
-  }} onDrop={(p,x,y)=>{
-    const col=Math.round((x-boardXY.current.x-GAP-CELL/2)/(CELL+GAP));
-    const row=Math.round((y-LIFT-boardXY.current.y-GAP-CELL/2)/(CELL+GAP));
-    if(canPlace(board,p,row,col)) commit(p,i,row,col);
+  <View style={styles.tray}>{tray.map((piece,i)=><PieceSlot key={piece?.id||i} piece={piece} index={i} onStart={()=>{clearPreview();measure();}} onMove={(p,x,y)=>{
+    const placement=getPlacement(board,p,x,y,boardXY.current.x,boardXY.current.y);
+    const target={piece:p,...placement,x,y};
+    previewRef.current=target;
+    setPreview(target);
+  }} onDrop={p=>{
+    const target=previewRef.current;
+    if(target?.piece.id===p.id&&target.valid) commit(p,i,target.row,target.col);
     else if(!muted) Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
-    setPreview(null);
-  }}/>)}</View>
-  {preview&&<View pointerEvents="none" style={{position:'absolute',left:preview.x-(bounds(preview.piece.shape).w*CELL*.82)/2,top:preview.y-LIFT-(bounds(preview.piece.shape).h*CELL*.82)/2,opacity:.92}}><PieceView piece={preview.piece} scale={.82}/></View>}
+    clearPreview();
+  }} onCancel={clearPreview}/>)}</View>
+  {preview&&<View pointerEvents="none" style={{position:'absolute',left:preview.x-((bounds(preview.piece.shape).w-1)*PITCH+CELL)/2,top:preview.y-LIFT-((bounds(preview.piece.shape).h-1)*PITCH+CELL)/2,opacity:.92}}><FloatingPiece piece={preview.piece}/></View>}
   <GameModal visible={over} title="NO MORE MOVES" body={`Final score\n${score.toLocaleString()}`} button="PLAY AGAIN" onPress={reset}/>
   <GameModal visible={tutorial} title="WELCOME TO PRISM" body={'Drag any of the three pieces onto the 8×8 board.\n\nComplete a full row or column to clear it. Chain clears to multiply your score.\n\nThe game ends when no piece fits.'} button="LET’S PLAY" onPress={()=>{setTutorial(false);AsyncStorage.setItem('pb-seen','1')}}/>
   </SafeAreaView>;
 }
 
-function PieceSlot({piece,index,onMove,onDrop}:{piece:Piece|null,index:number,onMove:(p:Piece,x:number,y:number)=>void,onDrop:(p:Piece,x:number,y:number)=>void}){
+function PieceSlot({piece,index,onStart,onMove,onDrop,onCancel}:{piece:Piece|null,index:number,onStart:()=>void,onMove:(p:Piece,x:number,y:number)=>void,onDrop:(p:Piece)=>void,onCancel:()=>void}){
   const active=useRef(false); const current=useRef(piece); current.current=piece;
-  const moveRef=useRef(onMove), dropRef=useRef(onDrop); moveRef.current=onMove; dropRef.current=onDrop;
-  const pan=useMemo(()=>PanResponder.create({onStartShouldSetPanResponder:()=>!!current.current,onMoveShouldSetPanResponder:()=>!!current.current,onPanResponderGrant:e=>{active.current=true;const p=current.current;if(p)moveRef.current(p,e.nativeEvent.pageX,e.nativeEvent.pageY)},onPanResponderMove:e=>{const p=current.current;if(p)moveRef.current(p,e.nativeEvent.pageX,e.nativeEvent.pageY)},onPanResponderRelease:e=>{const p=current.current;if(p)dropRef.current(p,e.nativeEvent.pageX,e.nativeEvent.pageY);active.current=false},onPanResponderTerminate:e=>{const p=current.current;if(p)dropRef.current(p,e.nativeEvent.pageX,e.nativeEvent.pageY);active.current=false}}),[index,piece?.id]);
+  const startRef=useRef(onStart), moveRef=useRef(onMove), dropRef=useRef(onDrop), cancelRef=useRef(onCancel);
+  startRef.current=onStart; moveRef.current=onMove; dropRef.current=onDrop; cancelRef.current=onCancel;
+  const last=useRef({x:0,y:0});
+  const pan=useMemo(()=>PanResponder.create({onStartShouldSetPanResponder:()=>!!current.current,onMoveShouldSetPanResponder:()=>!!current.current,onPanResponderTerminationRequest:()=>false,onPanResponderGrant:(e,g)=>{active.current=true;startRef.current();last.current={x:g.x0,y:g.y0};const p=current.current;if(p)moveRef.current(p,last.current.x,last.current.y)},onPanResponderMove:(e,g)=>{last.current={x:g.moveX,y:g.moveY};const p=current.current;if(p)moveRef.current(p,last.current.x,last.current.y)},onPanResponderRelease:()=>{const p=current.current;if(p)dropRef.current(p);active.current=false},onPanResponderTerminate:()=>{cancelRef.current();active.current=false}}),[index,piece?.id]);
   return <View {...pan.panHandlers} style={styles.slot}>{piece&&<PieceView piece={piece}/>}</View>
 }
 function GameModal({visible,title,body,button,onPress}:{visible:boolean,title:string,body:string,button:string,onPress:()=>void}){
