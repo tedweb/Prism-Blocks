@@ -1,0 +1,418 @@
+{"_e":"root:init","_t":1790113015761,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790113015761,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790113015762,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790113016120,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790113016287,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790113016365,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790113016605,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790113027773,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790113027773,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790113027777,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790113028090,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1790113028191,"id":"1","progress":0.12456747404844293,"total":17,"current":6}
+{"_e":"metro:bundling:progress","_t":1790113028276,"id":"1","progress":0.1695501730103806,"total":17,"current":7}
+{"_e":"metro:bundling:progress","_t":1790113028376,"id":"1","progress":0.1695501730103806,"total":48,"current":16}
+{"_e":"metro:bundling:progress","_t":1790113028479,"id":"1","progress":0.5936576189196452,"total":61,"current":47}
+{"_e":"metro:bundling:progress","_t":1790113028582,"id":"1","progress":0.5936576189196452,"total":198,"current":77}
+{"_e":"metro:bundling:progress","_t":1790113028682,"id":"1","progress":0.5936576189196452,"total":249,"current":103}
+{"_e":"metro:bundling:progress","_t":1790113028782,"id":"1","progress":0.5936576189196452,"total":280,"current":126}
+{"_e":"metro:bundling:progress","_t":1790113028882,"id":"1","progress":0.5936576189196452,"total":330,"current":175}
+{"_e":"metro:bundling:progress","_t":1790113028982,"id":"1","progress":0.5936576189196452,"total":396,"current":224}
+{"_e":"metro:bundling:progress","_t":1790113029083,"id":"1","progress":0.5936576189196452,"total":478,"current":281}
+{"_e":"metro:bundling:progress","_t":1790113029183,"id":"1","progress":0.5936576189196452,"total":524,"current":336}
+{"_e":"metro:bundling:progress","_t":1790113029287,"id":"1","progress":0.5936576189196452,"total":560,"current":377}
+{"_e":"metro:bundling:progress","_t":1790113029387,"id":"1","progress":0.5936576189196452,"total":593,"current":427}
+{"_e":"metro:bundling:progress","_t":1790113029489,"id":"1","progress":0.5936576189196452,"total":609,"current":469}
+{"_e":"metro:bundling:progress","_t":1790113029589,"id":"1","progress":0.6878149411516322,"total":627,"current":520}
+{"_e":"metro:bundling:progress","_t":1790113029689,"id":"1","progress":0.7989609467455622,"total":650,"current":581}
+{"_e":"metro:bundling:progress","_t":1790113029790,"id":"1","progress":0.86341921841961,"total":678,"current":630}
+{"_e":"metro:bundling:progress","_t":1790113029890,"id":"1","progress":0.9208244056728905,"total":693,"current":665}
+{"_e":"metro:bundling:progress","_t":1790113029991,"id":"1","progress":0.9887798924278121,"total":711,"current":707}
+{"_e":"metro:bundling:progress","_t":1790113030091,"id":"1","progress":0.9943899128897867,"total":712,"current":710}
+{"_e":"metro:bundling:progress","_t":1790113030326,"id":"1","progress":0.9971929838404241,"total":712,"current":711}
+{"_e":"metro:bundling:progress","_t":1790113030428,"id":"1","progress":0.9972470763229592,"total":726,"current":725}
+{"_e":"metro:bundling:progress","_t":1790113030537,"id":"1","progress":0.999,"total":726,"current":726}
+{"_e":"metro:bundling:done","_t":1790113030562,"id":"1","total":726,"ms":2788.701625}
+{"_e":"metro:client_log","_t":1790113031970,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031971,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031971,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031971,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031972,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031973,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031974,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031978,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031978,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031978,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031978,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031978,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031978,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031978,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113031978,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:bundling:started","_t":1790113061708,"id":"6","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790113061708,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1790113061721,"id":"6","total":1,"ms":13.619167}
+{"_e":"metro:client_log","_t":1790113062750,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062751,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062751,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062751,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062751,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062751,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062751,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062752,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062753,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062759,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062759,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062759,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062759,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062759,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062760,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062760,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113062760,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"root:init","_t":1790113108335,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790113108335,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790113108336,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790113108442,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790113108599,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790113108691,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790113108949,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790113118540,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790113118540,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790113118542,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790113118837,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1790113118938,"id":"1","progress":0.18367346938775508,"total":21,"current":9}
+{"_e":"metro:bundling:progress","_t":1790113119043,"id":"1","progress":0.18367346938775508,"total":70,"current":20}
+{"_e":"metro:bundling:progress","_t":1790113119143,"id":"1","progress":0.18367346938775508,"total":75,"current":32}
+{"_e":"metro:bundling:progress","_t":1790113119243,"id":"1","progress":0.4259279778393352,"total":95,"current":62}
+{"_e":"metro:bundling:progress","_t":1790113119343,"id":"1","progress":0.4259279778393352,"total":218,"current":91}
+{"_e":"metro:bundling:progress","_t":1790113119443,"id":"1","progress":0.4259279778393352,"total":266,"current":114}
+{"_e":"metro:bundling:progress","_t":1790113119543,"id":"1","progress":0.4259279778393352,"total":289,"current":128}
+{"_e":"metro:bundling:progress","_t":1790113119647,"id":"1","progress":0.4259279778393352,"total":333,"current":166}
+{"_e":"metro:bundling:progress","_t":1790113119748,"id":"1","progress":0.4259279778393352,"total":366,"current":219}
+{"_e":"metro:bundling:progress","_t":1790113119848,"id":"1","progress":0.4259279778393352,"total":451,"current":284}
+{"_e":"metro:bundling:progress","_t":1790113119948,"id":"1","progress":0.4324906748874814,"total":517,"current":340}
+{"_e":"metro:bundling:progress","_t":1790113120050,"id":"1","progress":0.5011016045528706,"total":558,"current":395}
+{"_e":"metro:bundling:progress","_t":1790113120150,"id":"1","progress":0.5618569591837335,"total":583,"current":437}
+{"_e":"metro:bundling:progress","_t":1790113120253,"id":"1","progress":0.5895116345877621,"total":590,"current":453}
+{"_e":"metro:bundling:progress","_t":1790113120353,"id":"1","progress":0.6840612184613418,"total":613,"current":507}
+{"_e":"metro:bundling:progress","_t":1790113120454,"id":"1","progress":0.7806435901392693,"total":644,"current":569}
+{"_e":"metro:bundling:progress","_t":1790113120554,"id":"1","progress":0.8516496579172134,"total":674,"current":622}
+{"_e":"metro:bundling:progress","_t":1790113120655,"id":"1","progress":0.9151742457148586,"total":692,"current":662}
+{"_e":"metro:bundling:progress","_t":1790113120754,"id":"1","progress":0.9608976667110952,"total":709,"current":695}
+{"_e":"metro:bundling:progress","_t":1790113120854,"id":"1","progress":0.9943899128897867,"total":712,"current":710}
+{"_e":"metro:bundling:progress","_t":1790113121001,"id":"1","progress":0.9971929838404241,"total":712,"current":711}
+{"_e":"metro:bundling:progress","_t":1790113121103,"id":"1","progress":0.9972356613082496,"total":723,"current":722}
+{"_e":"metro:bundling:progress","_t":1790113121138,"id":"1","progress":0.999,"total":723,"current":723}
+{"_e":"metro:bundling:progress","_t":1790113121239,"id":"1","progress":0.999,"total":726,"current":726}
+{"_e":"metro:bundling:done","_t":1790113121282,"id":"1","total":726,"ms":2741.97625}
+{"_e":"metro:client_log","_t":1790113122309,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122314,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122319,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122320,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122320,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122320,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122320,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122320,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122321,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122321,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122321,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122321,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122321,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122321,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122321,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122321,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122324,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122324,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122325,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122330,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122330,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122330,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122330,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122330,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122330,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122330,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122330,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122330,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122331,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122331,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122331,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122331,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122331,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122334,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122335,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122428,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122428,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122428,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122428,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122428,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113122428,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"root:init","_t":1790113254649,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790113254650,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790113254651,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790113255030,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790113255206,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790113255283,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790113255535,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790113265385,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790113265385,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790113265388,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790113265693,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1790113265793,"id":"1","progress":0.10467128027681662,"total":34,"current":11}
+{"_e":"metro:bundling:progress","_t":1790113265894,"id":"1","progress":0.10467128027681662,"total":70,"current":19}
+{"_e":"metro:bundling:progress","_t":1790113265994,"id":"1","progress":0.13573407202216065,"total":76,"current":28}
+{"_e":"metro:bundling:progress","_t":1790113266095,"id":"1","progress":0.13573407202216065,"total":188,"current":57}
+{"_e":"metro:bundling:progress","_t":1790113266196,"id":"1","progress":0.140625,"total":232,"current":87}
+{"_e":"metro:bundling:progress","_t":1790113266296,"id":"1","progress":0.16780374510088547,"total":249,"current":102}
+{"_e":"metro:bundling:progress","_t":1790113266397,"id":"1","progress":0.21101524553933748,"total":283,"current":130}
+{"_e":"metro:bundling:progress","_t":1790113266497,"id":"1","progress":0.31089072543618,"total":330,"current":184}
+{"_e":"metro:bundling:progress","_t":1790113266598,"id":"1","progress":0.32333717800845824,"total":408,"current":232}
+{"_e":"metro:bundling:progress","_t":1790113266698,"id":"1","progress":0.37051039697542537,"total":483,"current":294}
+{"_e":"metro:bundling:progress","_t":1790113266798,"id":"1","progress":0.4403463156132444,"total":541,"current":359}
+{"_e":"metro:bundling:progress","_t":1790113266898,"id":"1","progress":0.4956554543753699,"total":571,"current":402}
+{"_e":"metro:bundling:progress","_t":1790113266998,"id":"1","progress":0.5567258722700646,"total":583,"current":435}
+{"_e":"metro:bundling:progress","_t":1790113267098,"id":"1","progress":0.6652272049977372,"total":602,"current":491}
+{"_e":"metro:bundling:progress","_t":1790113267199,"id":"1","progress":0.7579565985158572,"total":626,"current":545}
+{"_e":"metro:bundling:progress","_t":1790113267299,"id":"1","progress":0.8246753703603816,"total":653,"current":593}
+{"_e":"metro:bundling:progress","_t":1790113267400,"id":"1","progress":0.9022197857658739,"total":678,"current":644}
+{"_e":"metro:bundling:progress","_t":1790113267501,"id":"1","progress":0.9354559718030692,"total":701,"current":678}
+{"_e":"metro:bundling:progress","_t":1790113267602,"id":"1","progress":0.9943899128897867,"total":712,"current":710}
+{"_e":"metro:bundling:progress","_t":1790113267752,"id":"1","progress":0.9971929838404241,"total":712,"current":711}
+{"_e":"metro:bundling:progress","_t":1790113267853,"id":"1","progress":0.9972356613082496,"total":723,"current":722}
+{"_e":"metro:bundling:progress","_t":1790113267918,"id":"1","progress":0.999,"total":723,"current":723}
+{"_e":"metro:bundling:progress","_t":1790113268019,"id":"1","progress":0.999,"total":726,"current":726}
+{"_e":"metro:bundling:done","_t":1790113268066,"id":"1","total":726,"ms":2680.306458}
+{"_e":"metro:client_log","_t":1790113269139,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269145,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269145,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269145,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269145,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269151,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269246,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269247,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269259,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269259,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:client_log","_t":1790113269259,"level":"error","data":["Text strings must be rendered within a <Text> component."]}
+{"_e":"metro:server_log","_t":1790113341379,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone","60"]}
+{"_e":"root:init","_t":1790119941668,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790119941668,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790119941669,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790119941741,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790119941911,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790119941998,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790119942249,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790119957913,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790119957913,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790119957918,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790119958205,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:failed","_t":1790119958208,"id":"1","message":"Unable to resolve \"../../App\" from \"node_modules/expo/AppEntry.js\"\n  1 | import registerRootComponent from 'expo/src/launch/registerRootComponent';\n  2 |\n> 3 | import App from '../../App';\n    |                  ^\n  4 |\n  5 | registerRootComponent(App);\n  6 |","importStack":"\u001b[1mImport stack:\u001b[22m\n\u001b[90m\u001b[39m\n\u001b[90m\u001b[90m \u001b[39m\u001b[90mnode_modules/\u001b[1mexpo\u001b[22m/AppEntry.js\u001b[39m\n\u001b[90m\u001b[90m |\u001b[39m\u001b[90m \u001b[36mimport\u001b[39m\u001b[90m \u001b[32m\"../../App\"\u001b[39m\u001b[90m\u001b[39m\n\u001b[90m\u001b[39m\n\u001b[90m\u001b[90m \u001b[39m\u001b[90m\u001b[39m\n\u001b[90m\u001b[90m |\u001b[39m\u001b[90m \u001b[36mimport\u001b[39m\u001b[90m \u001b[32m\"./node_modules/\u001b[1mexpo\u001b[22m/AppEntry\"\u001b[39m\u001b[90m\u001b[39m\n","filename":null,"targetModuleName":"../../App","originModulePath":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:server_log","_t":1790120646071,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone","60"]}
+{"_e":"root:init","_t":1790120738559,"format":"v0-jsonl","version":"57.0.26"}
+{"_e":"env:mode","_t":1790120738559,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1790120738560,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1790120738917,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1790120739089,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1790120739213,"plugins":[]}
+{"_e":"metro:instantiate","_t":1790120739389,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1790120746433,"id":"1","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1790120746433,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790120746435,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1790120746685,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1790120746788,"id":"1","progress":0.1695501730103806,"total":17,"current":7}
+{"_e":"metro:bundling:progress","_t":1790120746904,"id":"1","progress":0.28027681660899656,"total":17,"current":9}
+{"_e":"metro:bundling:progress","_t":1790120747005,"id":"1","progress":0.28027681660899656,"total":46,"current":15}
+{"_e":"metro:bundling:progress","_t":1790120747105,"id":"1","progress":0.28567181926278234,"total":58,"current":31}
+{"_e":"metro:bundling:progress","_t":1790120747208,"id":"1","progress":0.28567181926278234,"total":181,"current":69}
+{"_e":"metro:bundling:progress","_t":1790120747310,"id":"1","progress":0.28567181926278234,"total":212,"current":89}
+{"_e":"metro:bundling:progress","_t":1790120747409,"id":"1","progress":0.28567181926278234,"total":253,"current":119}
+{"_e":"metro:bundling:progress","_t":1790120747510,"id":"1","progress":0.33844586843874847,"total":318,"current":185}
+{"_e":"metro:bundling:progress","_t":1790120747609,"id":"1","progress":0.3902062115015561,"total":373,"current":233}
+{"_e":"metro:bundling:progress","_t":1790120747709,"id":"1","progress":0.42784942060265185,"total":451,"current":295}
+{"_e":"metro:bundling:progress","_t":1790120747809,"id":"1","progress":0.5114965550392566,"total":474,"current":339}
+{"_e":"metro:bundling:progress","_t":1790120747911,"id":"1","progress":0.603536735390806,"total":493,"current":383}
+{"_e":"metro:bundling:progress","_t":1790120748012,"id":"1","progress":0.6793365478515625,"total":512,"current":422}
+{"_e":"metro:bundling:progress","_t":1790120748112,"id":"1","progress":0.7166652669298171,"total":567,"current":480}
+{"_e":"metro:bundling:progress","_t":1790120748216,"id":"1","progress":0.737229488703924,"total":580,"current":498}
+{"_e":"metro:bundling:progress","_t":1790120748317,"id":"1","progress":0.7465189255491474,"total":603,"current":521}
+{"_e":"metro:bundling:progress","_t":1790120748417,"id":"1","progress":0.7707685864797549,"total":639,"current":561}
+{"_e":"metro:bundling:progress","_t":1790120748517,"id":"1","progress":0.8207819113388282,"total":670,"current":607}
+{"_e":"metro:bundling:progress","_t":1790120748619,"id":"1","progress":0.8770471151423532,"total":693,"current":649}
+{"_e":"metro:bundling:progress","_t":1790120748719,"id":"1","progress":0.9252866131801281,"total":709,"current":682}
+{"_e":"metro:bundling:progress","_t":1790120748819,"id":"1","progress":0.9943899128897867,"total":712,"current":710}
+{"_e":"metro:bundling:progress","_t":1790120749157,"id":"1","progress":0.9971929838404241,"total":712,"current":711}
+{"_e":"metro:bundling:progress","_t":1790120749258,"id":"1","progress":0.9972047532886694,"total":715,"current":714}
+{"_e":"metro:bundling:progress","_t":1790120749295,"id":"1","progress":0.999,"total":715,"current":715}
+{"_e":"metro:bundling:progress","_t":1790120749396,"id":"1","progress":0.999,"total":726,"current":726}
+{"_e":"metro:bundling:done","_t":1790120749436,"id":"1","total":726,"ms":3002.6525}
+{"_e":"metro:server_log","_t":1790120941504,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone","60"]}
+{"_e":"metro:server_log","_t":1790121111997,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone","60"]}

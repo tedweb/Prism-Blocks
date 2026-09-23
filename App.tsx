@@ -63,16 +63,23 @@ function App() {
     const col=Math.round((x-boardXY.current.x-GAP-CELL/2)/(CELL+GAP));
     const row=Math.round((y-LIFT-boardXY.current.y-GAP-CELL/2)/(CELL+GAP));
     setPreview({piece:p,row,col,valid:canPlace(board,p,row,col),x,y});
-  }} onDrop={(p)=>{if(preview?.piece.id===p.id&&preview.valid)commit(p,i,preview.row,preview.col);setPreview(null);}}/>)}</View>
+  }} onDrop={(p,x,y)=>{
+    const col=Math.round((x-boardXY.current.x-GAP-CELL/2)/(CELL+GAP));
+    const row=Math.round((y-LIFT-boardXY.current.y-GAP-CELL/2)/(CELL+GAP));
+    if(canPlace(board,p,row,col)) commit(p,i,row,col);
+    else if(!muted) Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+    setPreview(null);
+  }}/>)}</View>
   {preview&&<View pointerEvents="none" style={{position:'absolute',left:preview.x-(bounds(preview.piece.shape).w*CELL*.82)/2,top:preview.y-LIFT-(bounds(preview.piece.shape).h*CELL*.82)/2,opacity:.92}}><PieceView piece={preview.piece} scale={.82}/></View>}
   <GameModal visible={over} title="NO MORE MOVES" body={`Final score\n${score.toLocaleString()}`} button="PLAY AGAIN" onPress={reset}/>
   <GameModal visible={tutorial} title="WELCOME TO PRISM" body={'Drag any of the three pieces onto the 8×8 board.\n\nComplete a full row or column to clear it. Chain clears to multiply your score.\n\nThe game ends when no piece fits.'} button="LET’S PLAY" onPress={()=>{setTutorial(false);AsyncStorage.setItem('pb-seen','1')}}/>
   </SafeAreaView>;
 }
 
-function PieceSlot({piece,index,onMove,onDrop}:{piece:Piece|null,index:number,onMove:(p:Piece,x:number,y:number)=>void,onDrop:(p:Piece)=>void}){
+function PieceSlot({piece,index,onMove,onDrop}:{piece:Piece|null,index:number,onMove:(p:Piece,x:number,y:number)=>void,onDrop:(p:Piece,x:number,y:number)=>void}){
   const active=useRef(false); const current=useRef(piece); current.current=piece;
-  const pan=useMemo(()=>PanResponder.create({onStartShouldSetPanResponder:()=>!!current.current,onMoveShouldSetPanResponder:()=>!!current.current,onPanResponderGrant:e=>{active.current=true;const p=current.current;if(p)onMove(p,e.nativeEvent.pageX,e.nativeEvent.pageY)},onPanResponderMove:e=>{const p=current.current;if(p)onMove(p,e.nativeEvent.pageX,e.nativeEvent.pageY)},onPanResponderRelease:()=>{const p=current.current;if(p)onDrop(p);active.current=false},onPanResponderTerminate:()=>{const p=current.current;if(p)onDrop(p);active.current=false}}),[index,piece?.id]);
+  const moveRef=useRef(onMove), dropRef=useRef(onDrop); moveRef.current=onMove; dropRef.current=onDrop;
+  const pan=useMemo(()=>PanResponder.create({onStartShouldSetPanResponder:()=>!!current.current,onMoveShouldSetPanResponder:()=>!!current.current,onPanResponderGrant:e=>{active.current=true;const p=current.current;if(p)moveRef.current(p,e.nativeEvent.pageX,e.nativeEvent.pageY)},onPanResponderMove:e=>{const p=current.current;if(p)moveRef.current(p,e.nativeEvent.pageX,e.nativeEvent.pageY)},onPanResponderRelease:e=>{const p=current.current;if(p)dropRef.current(p,e.nativeEvent.pageX,e.nativeEvent.pageY);active.current=false},onPanResponderTerminate:e=>{const p=current.current;if(p)dropRef.current(p,e.nativeEvent.pageX,e.nativeEvent.pageY);active.current=false}}),[index,piece?.id]);
   return <View {...pan.panHandlers} style={styles.slot}>{piece&&<PieceView piece={piece}/>}</View>
 }
 function GameModal({visible,title,body,button,onPress}:{visible:boolean,title:string,body:string,button:string,onPress:()=>void}){

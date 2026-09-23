@@ -1,0 +1,7 @@
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Users/tgodwin/Library/Developer/Xcode/DerivedData/PrismBlocks-dwnkshkyzxwpioeaclpcyozvhgjy/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/fmt.build/Objects-normal/arm64/format.o /Users/tgodwin/Documents/project-brainstorm/prism_block/ios/Pods/fmt/src/format.cc normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'fmt' from project 'Pods')
+	Building workspace PrismBlocks with scheme PrismBlocks and configuration Debug
+(2 failures)
